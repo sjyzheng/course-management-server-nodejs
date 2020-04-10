@@ -1,0 +1,19 @@
+{
+  "name": "wbdv-online-sp20-jzheng-server-node",
+  "version": "1.0.0",
+  "description": "Node.js Server Middle Tier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "Steve Zheng",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
+}
