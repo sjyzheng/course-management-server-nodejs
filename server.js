@@ -2,8 +2,9 @@ var bodyParser = require('body-parser')
 var express = require('express');
 var app = express();
 
+const url = 'mongodb://user:userpassword1@ds031213.mlab.com:31213/heroku_xmmh98qs'
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/whiteboard-jzheng', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
