@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(function (req,res, next) {
-    var allowedOrigins = ['http://localhost:4200', 'http://localhost:8020', 'https://wbdv-sp20-jz-client-angular.herokuapp.com/', `https://wbdv-sp20-jz-client-angular-a9.herokuapp.com/`];
+    var allowedOrigins = ['http://localhost:4200', 'http://localhost:8020', 'https://wbdv-sp20-jz-client-angular.herokuapp.com', `https://wbdv-sp20-jz-client-angular-a9.herokuapp.com`];
     var origin = req.headers.origin;
     if(allowedOrigins.indexOf(origin) > -1){
         res.setHeader('Access-Control-Allow-Origin', origin);
